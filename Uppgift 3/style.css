@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fefae0;
+}
+
+.main-page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-page-header h1 {
+    padding: 8px;
+    border: 20px dotted #bc6c25;
+    margin: 10px;
+    font-family: 'Lora', serif;
+}
+
+.header-nav h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.main-page-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.recipe1-page-header {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */ 
+    /* EDIT: Tar bort detta för att texten ska hamna i mitten endast på y-axeln */
+    height: 100vh;
+}
+
+/* .recipe1-page-header h1 {
+    padding: 20px;
+    border: 10px dotted #bc6c25;
+    margin: 10px;
+} */
+
+.container {
+    display: flex;
+}
+
+.container h2 {
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.artikel {
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid #bc6c25;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+}
+
+/* .artikel img {
+    width: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+} */
+
+.artikel img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.mitten-rad {
+    width: 60px;
+}
+
+table th{
+    text-align: left;
+}
+
+.upper-part {
+    height: 300px;
+}
+
+.arrow {
+    width: 100px;
+}
+
+/* .header-nav {
+    width: 100%;
+    height: 50px;
+    background-color: #dda15e;
+    border: 2px solid #283618;
+}
+
+.header-nav h1 {
+    background-color: transparent;
+    text-align: center;
+} */
+
+.similar-recipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.similar-links {
+    display: flex;
+}
+
+.similar-links img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: auto
+}
+
+#left, #right {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+}
+
+#left, #right, a {
+    text-decoration: none;
+    color: black;
+}
+
+#left, #right, p {
+    padding-bottom: 10px;
+}
