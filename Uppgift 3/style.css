@@ -35,7 +35,7 @@
 .recipe1-page-header {
     display: flex;
     justify-content: center;
-    /* align-items: center; */ 
+    /* align-items: center; */
     /* EDIT: Tar bort detta för att texten ska hamna i mitten endast på y-axeln */
     height: 100vh;
 }
@@ -48,6 +48,7 @@
 
 .container {
     display: flex;
+    justify-content: center;
 }
 
 .container h2 {
@@ -143,4 +144,21 @@ table th{
 
 #left, #right, p {
     padding-bottom: 10px;
+}
+
+.table-test {
+    display: flex;
+}
+
+.table-test .table {
+    width: 50%;
+}
+
+.fun-fact {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dotted black;
 }
