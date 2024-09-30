@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 900px;
+    height: 800px;
+    background-color: #490909;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gray-rectangle {
+    width: 800px;
+    height: 210px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blue-square {
+    width: 220px;
+    height: 170px;
+    background-color: rgb(58, 120, 255);
+    display: flex;
+    padding: 20px;
+}
+
+.blue-square.left-square {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blue-square.middle-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.blue-square.right-square {
+    display: flex;
+    flex-direction: column;
+}
+
+.red-square-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#middle-red {
+    align-self: flex-end;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.red-square {
+    width: 40px;
+    height: 40px;
+    background-color: salmon;
+}
+
+.orange-long {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(241, 166, 27);
+    margin-top: 10px;
+}
+
+.green-square {
+    width: 40px;
+    height: 40px;
+    background-color: greenyellow;
+}
+
+.white-rectangle {
+    height: 40px;
+    width: 100%;
+    background-color: azure;
+}
+
+.blue-square.left-square-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.blue-square.left-square-lower #middle-red-lower {
+    align-self: center;
+}
+
+.left-with-rectangles {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.left-with-rectangles > .orange-long {
+    height: 100%;
+    width: 40px;
+    background-color: salmon;
+    margin: 0 10px 0 0;    
+}
+
+.right-with-squares {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blue-square.right-square-lower {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.blue-square.right-square-lower > .high {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.blue-square.right-square-lower > .mid {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}

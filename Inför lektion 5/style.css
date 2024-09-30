@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article section:first-of-type {
+    background-color: brown;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ol li {
+    background-color: green;
+}
+
+ol li:not(#unique-list-element) {
+    background-color: yellow;
+}
+
+ul li {
+    background-color: red;
+}
+
+div h1#main-header {
+    background-color: purple;
+}
+
+span.startpage-large-fonts {
+    background-color: orange;
+}

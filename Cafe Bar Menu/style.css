@@ -1,0 +1,24 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Images/coffee-beans-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.menu {
+    background-color: #DEB887;
+    width: 540px;
+    height: 800px;
+    border: 5px solid #753714;
+    padding: 20px;
+}
