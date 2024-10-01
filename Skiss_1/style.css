@@ -118,7 +118,7 @@ body {
 
 .left-with-rectangles > .orange-long {
     height: 100%;
-    width: 40px;
+    width: 50px;
     background-color: salmon;
     margin: 0 10px 0 0; 
 }
