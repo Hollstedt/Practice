@@ -96,6 +96,8 @@ body {
     height: 40px;
     width: 100%;
     background-color: azure;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .blue-square.left-square-lower {
@@ -118,7 +120,7 @@ body {
     height: 100%;
     width: 40px;
     background-color: salmon;
-    margin: 0 10px 0 0;    
+    margin: 0 10px 0 0; 
 }
 
 .right-with-squares {
@@ -146,4 +148,10 @@ body {
     position: absolute;
     right: 40px;
     top: 40px;
+}
+
+.black-bars {
+    height: 40px;
+    width: 15%;
+    background-color: black;
 }
