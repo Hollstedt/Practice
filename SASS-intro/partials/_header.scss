@@ -1,0 +1,9 @@
+header {
+    @include border();
+
+    h1 {
+        text-decoration: underline;
+        color: $brandColor-1;
+        text-align: center;
+    }
+}

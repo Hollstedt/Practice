@@ -1,0 +1,91 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.site-wrapper {
+    @include flex (center, center);
+    background: $mapBackgroundColor;
+    height: 100vh;
+
+    .outer-classroom-wall {
+        @include border();
+        width: 70%;
+        height: 80%;
+    }
+
+    .upper-half, .lower-half{
+        @include flex (space-around, center);
+        width: 100%;
+        height: 50%;
+    }
+
+    // .lower-half {
+    //     @include border($style: dotted);
+    //     width: 100%;
+    //     height: 50%;
+    // }
+
+    .left-big-classroom, .right-big-classroom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+        gap: 20px;
+        background: $bigClassroomBackgroundColor;
+        width: 45%;
+        height: 90%
+    }
+
+    .desk {
+        @include border($width:2px);
+        height: 50px;
+        width: 100px;
+        background: $tableColor;
+        border-radius: 10px;
+    }
+
+    .desk:hover {
+        background: $tableColorOnHover
+    }
+
+    .teachers-desk {
+        @include border($width:2px);
+        height: 50px;
+        width: 100px;
+        background: $teachersTableColor;
+    }
+
+    .teachers-desk:hover {
+        background: $teachersTableColorOnHover;
+    }
+
+    .front-row, .middle-row, .back-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    .left-box, .right-box {
+        width: 40%;
+        height: 90%;
+        background: $mediumClassroomBackgroundColor;
+    }
+
+    .middle-box {
+        @include border();
+        width: auto;
+        height: 90%;
+        background: $smallClassroomBackgroundColor;
+    }
+
+}   

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.site-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3b3b3b;
+  height: 100vh;
+}
+.site-wrapper .outer-classroom-wall {
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+  width: 70%;
+  height: 80%;
+}
+.site-wrapper .upper-half, .site-wrapper .lower-half {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.site-wrapper .left-big-classroom, .site-wrapper .right-big-classroom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  gap: 20px;
+  background: #a4b0a7;
+  width: 45%;
+  height: 90%;
+}
+.site-wrapper .desk {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  height: 50px;
+  width: 100px;
+  background: rgb(158, 158, 0);
+  border-radius: 10px;
+}
+.site-wrapper .desk:hover {
+  background: rgb(124, 124, 0);
+}
+.site-wrapper .teachers-desk {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  height: 50px;
+  width: 100px;
+  background: rgb(189, 87, 87);
+}
+.site-wrapper .teachers-desk:hover {
+  background: rgb(141, 66, 66);
+}
+.site-wrapper .front-row, .site-wrapper .middle-row, .site-wrapper .back-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.site-wrapper .left-box, .site-wrapper .right-box {
+  width: 40%;
+  height: 90%;
+  background: #8e9991;
+}
+.site-wrapper .middle-box {
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+  width: auto;
+  height: 90%;
+  background: #4e5550;
+}/*# sourceMappingURL=style.css.map */

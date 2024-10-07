@@ -1,0 +1,10 @@
+@mixin border($width:2px) {
+    border: $width solid rgb(217, 29, 255);
+}
+
+@mixin flex($flex-dir: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $flex-dir;
+}

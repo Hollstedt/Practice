@@ -1,0 +1,30 @@
+header {
+  border: 2px solid rgb(217, 29, 255);
+}
+header h1 {
+  text-decoration: underline;
+  color: #009a00;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid rgb(217, 29, 255);
+  height: 400px;
+  background: peachpuff;
+}
+main article {
+  height: 100px;
+  width: 100px;
+  background: black;
+  margin: 20px;
+}
+
+article {
+  height: 300px;
+  width: 100%;
+  background: black;
+}/*# sourceMappingURL=style.css.map */

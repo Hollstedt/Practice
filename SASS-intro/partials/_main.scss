@@ -1,0 +1,20 @@
+@mixin desktop {
+    @media ( 998px) {
+
+    }
+}
+
+main {
+    @include flex();
+    @include border();
+
+    height: 400px;
+    background: peachpuff;
+
+    article {
+        height: 100px;
+        width: 100px;
+        background: black;
+        margin: 20px;
+    }
+}

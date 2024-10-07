@@ -1,0 +1,13 @@
+@mixin border ($width: 4px, $style: solid, $color: white) {
+    border: {
+        width: $width;
+        style: $style;
+        color: $color;
+    }
+}
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
