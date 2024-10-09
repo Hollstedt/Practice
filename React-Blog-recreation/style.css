@@ -1,0 +1,92 @@
+header {
+  /* @include helpBorder(); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  /* .navbar-part2 {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 800px;
+      height: 100%;
+
+      .search-input {
+          width: 100%;
+      }
+
+      .inputImg {
+          position: absolute;
+          height: 100%;
+      }
+
+  } */
+}
+header .navbar-part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  font-size: 0.7rem;
+  color: darkgray;
+  margin-right: 10px;
+}
+header .navbar-part1 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header .navbar-part1 .logo span:first-of-type {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  vertical-align: baseline;
+}
+header .navbar-part1 .logo img {
+  height: 50%;
+  width: auto;
+  margin-right: 5px;
+}
+header .navbar-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+header .navbar-part2 input {
+  width: 800px;
+  height: 55%;
+  border-radius: 25px;
+  border-style: none;
+  background: url(https://www.svgrepo.com/show/532555/search.svg) no-repeat left;
+  background: #EBECF0;
+  outline: none;
+  padding: 0 0px 0px 35px;
+  background-size: 20px;
+  background-position: 8px 10px;
+}
+header .navbar-part2 input::-moz-placeholder {
+  font-size: 0.85rem;
+}
+header .navbar-part2 input::placeholder {
+  font-size: 0.85rem;
+}
+header .navbar-part2 input:focus {
+  outline: 2px solid #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+}/*# sourceMappingURL=style.css.map */

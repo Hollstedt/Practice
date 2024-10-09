@@ -1,0 +1,11 @@
+@mixin helpBorder ($width: 2px, $style: solid, $color: black) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+
+@mixin flexCenter ($display: flex, $justify: center, $align: center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
