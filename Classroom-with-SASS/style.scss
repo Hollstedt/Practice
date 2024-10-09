@@ -17,7 +17,7 @@ body {
     height: 100vh;
 
     .outer-classroom-wall {
-        @include border();
+        @include border($width: 2px);
         width: 70%;
         height: 80%;
     }
