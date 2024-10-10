@@ -16,7 +16,7 @@ body {
   height: 100vh;
 }
 .site-wrapper .outer-classroom-wall {
-  border-width: 4px;
+  border-width: 2px;
   border-style: solid;
   border-color: white;
   width: 70%;
@@ -30,14 +30,23 @@ body {
   height: 50%;
 }
 .site-wrapper .left-big-classroom, .site-wrapper .right-big-classroom {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 20px;
-  gap: 20px;
+  padding-bottom: 50px;
+  gap: 40px;
   background: #a4b0a7;
   width: 45%;
   height: 90%;
+}
+.site-wrapper .left-big-classroom:hover, .site-wrapper .right-big-classroom:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  background: rgb(190, 134, 60);
 }
 .site-wrapper .desk {
   border-width: 2px;
@@ -68,16 +77,61 @@ body {
   justify-content: space-evenly;
   align-items: flex-end;
 }
-.site-wrapper .left-box, .site-wrapper .right-box {
-  width: 40%;
+.site-wrapper .left-mid-classroom, .site-wrapper .right-mid-classroom {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 30%;
   height: 90%;
   background: #8e9991;
+  padding-bottom: 50px;
+  gap: 40px;
 }
-.site-wrapper .middle-box {
-  border-width: 4px;
+.site-wrapper .left-mid-classroom:hover, .site-wrapper .right-mid-classroom:hover {
+  border-width: 1px;
   border-style: solid;
   border-color: white;
+  background: rgb(46, 59, 238);
+}
+.site-wrapper .middle-box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: auto;
+  max-width: 300px;
+  padding: 0 20px 0 20px;
   height: 90%;
   background: #4e5550;
+}
+.site-wrapper .middle-box #firstline {
+  margin: 40px 0 0 0;
+}
+.site-wrapper .middle-box .desk {
+  border-radius: 0 0 50px 50px;
+  width: 100px;
+  height: 50px;
+}
+.site-wrapper .middle-box .back-row2 {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.site-wrapper .middle-box #back-desk-left {
+  transform: rotate(20deg);
+}
+.site-wrapper .middle-box #back-desk-right {
+  transform: rotate(-20deg);
+}
+.site-wrapper .middle-box:hover {
+  background: rgb(83, 30, 11);
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
 }/*# sourceMappingURL=style.css.map */
