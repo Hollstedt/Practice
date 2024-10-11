@@ -1,80 +1,91 @@
 header {
-    /* @include helpBorder(); */
-    @include flexCenter();
-    height: 70px;
+    position: sticky;
+    top: 0;
 
-    .navbar-part1 {
-        @include flexCenter();
-        width: auto;
-        height: 100%;
-        font-size: 0.7rem;
-        color: darkgray;
-        margin-right: 10px;
-
-        .logo {
-            @include flexCenter;
-            width: 100%;
-            height: 100%;
-
-            span:first-of-type {
-                margin-right: 10px;
-                font-size: 1.2rem;
-                font-weight: 600;
-                vertical-align: baseline;
-            }
-
-            img {
-                height: 50%;
-                width: auto;
-                margin-right: 5px;
-            }
-        }
-    }
-
-    /* .navbar-part2 {
-        display: flex;
-        align-items: center;
+    nav {
+        @include flexCenter($justify: space-between);
+        height: 70px;
+        padding: 0 40px 0 10px;
+        background: $siteBackgroundColor;
         position: relative;
-        width: 800px;
-        height: 100%;
 
-        .search-input {
-            width: 100%;
-        }
-
-        .inputImg {
-            position: absolute;
+        .navbar-part1 {
+            @include flexCenter();
+            width: auto;
             height: 100%;
-        }
+            font-size: 0.7rem;
+            color: darkgray;
 
-    } */
+            .logo {
+                @include flexCenter;
+                width: 100%;
+                height: 100%;
 
-    .navbar-part2 {
-        @include flexCenter();
-        width: auto;
-        height: 100%;
+                span:first-of-type {
+                    margin-right: 10px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    vertical-align: baseline;
+                }
 
-        input {
-            width: 800px;
-            height: 55%;
-            border-radius: 25px;
-            border-style: none;
-            background: url(https://www.svgrepo.com/show/532555/search.svg) no-repeat left;
-            background: #EBECF0;
-            outline: none;
-            padding: 0 0px 0px 35px;
-            background-size: 20px;
-            background-position: 8px 10px;
-
-            &::placeholder {
-                font-size: 0.85rem;
-            }
-
-            &:focus {
-                outline: 2px solid #555;
+                img {
+                    height: 50%;
+                    width: auto;
+                    margin-right: 5px;
+                }
             }
         }
 
+        .navbar-part2 {
+            @include flexCenter();
+            width: auto;
+            height: 100%;
+            position: absolute;
+            left: 450px;
+
+            input {
+                width: 900px;
+                height: 55%;
+                border-radius: 25px;
+                border-style: none;
+                background: #EBECF0;
+                outline: none;
+                padding: 0 0px 0px 35px;
+
+                &::placeholder {
+                    font-size: 0.85rem;
+                }
+
+                &:focus {
+                    outline: 2px solid #555;
+                }
+            }
+
+        }
+
+        .navbar-part3 {
+            @include flexCenter($justify: flex-end);
+            width: auto;
+            margin-left: 30px;
+
+            .navbar-links {
+                @include flexCenter();
+                // gap: 40px;
+                
+                a {
+                    text-decoration: none;
+                    background-color: transparent;
+                    color: black;
+                    padding: 10px 10px;
+
+                    &:hover {
+                        background-color:#f0f0f0;
+                        border-radius: 25px;
+                        display: inline-block;
+                        padding: 10px 10px;
+                    }
+                }
+            }
+        }
     }
-
 }
